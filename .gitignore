@@ -1,0 +1,6 @@
+#Desafio 9
+#Criei as marcações das minhas músicas favoritas, todas tem direitos, por isso gitignore.
+
+Desafios/Desafio_9/
+Desafios/Desafio_9/*
+**/Desafio_9/
