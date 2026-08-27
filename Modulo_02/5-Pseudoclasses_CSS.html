@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo PseudoClasses</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {                       /*PSEUDOCLASSES DEFINEM ESTADOS DE ELEMENTOS NA HTML*/
+            text-decoration: underline;
+            color: black;
+        }
+
+        a::after {                      /*PSEUDOELEMENTOS*/
+            content: '[link]';
+            color: darkgray;
+            font-weight: normal;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando LINKS</h1>
+
+    <h2>Para ver uma imagem da hora, acesse:</h2>
+    <ul>
+        <li><a href="https://youtu.be/a3h3oMl41hc?si=rG8zgkbQ4r9EFIL6">Link DAORA</a></li>
+    </ul>
+</body>
+</html>
