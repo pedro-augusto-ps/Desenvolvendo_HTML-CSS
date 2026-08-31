@@ -6,6 +6,7 @@
     <title>Grouping Tags</title>
 
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         body {
             background-color: #DDCC92;
         }
@@ -24,7 +25,7 @@
             border: 3px solid #7A682C;
         }
 
-        #links {
+        #links a{
             background-color: #a0936a;
             color: black;
 
@@ -32,14 +33,17 @@
             text-decoration: none;
 
         }
-        nav > a:hover {
+        #links a:hover {
             text-decoration: underline;
-            font: normal bold 2px 'Montserrat'
+            font: normal bold 1em 'Montserrat';
+            color: gold;
+            background-color: #7A682C;
         }
 
         #artigo {
             margin-bottom: 0%;
             padding-bottom: 0%;
+
         }
         #p_artigo {
             margin: 5px 1px 0px 1px;
@@ -62,6 +66,7 @@
             color: #50441c;
             background-color: #b19741;
 
+            box-shadow: 3px 4px 13px 0px #50441c;
             text-align: center;
             text-decoration: none;
 
@@ -81,17 +86,14 @@
             text-align: center;
         }
 
-        footer {
-            background-color: #aa9c70;
-            padding: 0px 0px 200px 0px;
-        }
+
 
         footer p {
             margin: 10px 0px 0px 0px;
+            padding: 20px;
+            background-color: #ffffff;
 
-            background-color: #50441c;
-
-            text-align: center;
+            text-align: justify;
 
         }
     </style>
@@ -116,7 +118,6 @@
     </main>
     <footer>
         <p>Desenvolvido por Pedro</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aperiam minima quia eos deleniti pariatur eveniet labore blanditiis voluptatem tempore corporis, illo ullam accusamus quis? Quisquam tempora deserunt dolor non.</p>
     </footer>
 </body>
 </html>
