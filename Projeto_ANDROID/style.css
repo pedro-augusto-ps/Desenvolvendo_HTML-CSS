@@ -41,3 +41,54 @@ header > p {
     background-color: white;
     padding: 5px 5px 50px 5px
 }
+
+.container {
+    display: flex;
+    gap: 15px;
+    flex: 1;
+    align-items: stretch;
+}
+
+.main {
+    background-color: #598061;
+    margin: 10px;
+    flex: 1;
+
+    border: 1px solid #598061;
+    border-radius: 6px;
+    box-shadow: 4px 3px 7px 0px #3a533f;
+}
+.main > h2 {
+    background-color: white;
+    border: 1px solid #598061;
+    border-radius: 6px;
+    box-shadow: 4px 3px 7px 0px #3a533f;
+    padding: 3px;
+
+    text-align: center;
+    font: normal bold 2em;
+
+    padding: 4px;
+    margin: 0px;
+}
+.main > h2 > strong {
+    font: normal bold 4em;
+    color: #253528;
+    
+}
+.main p {
+    background-color: white;
+    text-align: justify;
+
+    flex: 1;
+    
+    margin: 15px 7px 7px 7px;
+    padding: 5px 5px 50px 5px;
+    border: 4px;
+}
+
+aside {
+    background-color: white;
+    display: flex;
+    
+}
