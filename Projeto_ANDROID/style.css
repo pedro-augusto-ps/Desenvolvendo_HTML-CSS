@@ -183,3 +183,22 @@ footer {
     text-align: justify;
 
 }
+
+nav {
+    background-color: rgb(49, 49, 49);
+    text-align: center;
+}
+
+nav a {
+    background-color: rgb(107, 107, 107);
+    color: white;
+    text-decoration: none;
+    margin: 3px 10px 3px 3px;
+
+    border-radius: 6px;
+}
+
+nav a:hover {
+    font-size: 1.2em;
+    
+}
