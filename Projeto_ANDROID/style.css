@@ -23,7 +23,7 @@ header {
 header h1 {
     padding: 4px;
     display: inline;
-    
+
     font: normal bold 2em;
 
     text-align: center;
@@ -89,6 +89,97 @@ header > p {
 
 aside {
     background-color: white;
-    display: flex;
-    
+    margin: 10px;
+    padding: 3px;
+
+    box-shadow: 4px 3px 7px 0px #3a533f;
+    border-radius: 6px;
+    background-color: #598061;
+
+    text-align: center;
+}
+
+aside > h1 {
+    display: inline-block;
+
+    font-weight: bold;
+
+    padding: 4px;
+    margin: 5px;
+
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 4px 3px 7px 0px #3a533f;
+}
+aside > p {
+    padding-bottom: 50px;
+}
+.paragrafos{
+    background-color: white;
+    text-align: justify;
+
+    margin: 3px;
+    border-radius: 6px;
+
+    box-shadow: 4px 3px 7px 0px #3a533f;
+}
+
+aside > ul {
+    background-color: white;
+    display: inline-block;
+
+    padding: 30px;
+    margin: 3px;
+
+    border-radius: 6px;
+
+    box-shadow: 4px 3px 7px 0px #3a533f;
+}
+
+aside > ul > li{
+    text-align: justify;
+}
+
+#conclusao {
+    margin: 10px;
+    padding: 5px;
+
+    text-align: center;
+    text-decoration: none;
+
+    background-color: #598061;
+    color: black;
+
+    border-radius: 6px;
+    box-shadow: 4px 3px 7px 0px #3a533f;
+}
+
+#conclusao h2 {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+
+    background-color: white;
+    font-weight: bold;
+
+    border-radius: 6px;
+    box-shadow: 4px 3px 7px 0px #3a533f;
+}
+
+#conclusao p {
+    margin: 5px;
+    padding: 10px;
+
+    background-color: white;
+    text-align: justify;
+
+    border-radius: 6px;
+    box-shadow: 4px 3px 7px 0px #3a533f;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: justify;
+
 }
