@@ -222,3 +222,6 @@ nav a:hover {
 img {
     border-radius: 6px;
 }
+img {
+    width: 100%;
+}
