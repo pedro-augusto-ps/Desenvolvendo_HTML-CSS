@@ -1,6 +1,71 @@
 @charset "UTF-8";
 
-* {
-    padding: 0%;
-    margin: 0%;
+* {                 /*Configurações globais*/
+    padding: 0px;
+    margin: 0px;
 }
+:root {
+    --cor_fundo_imagens: rgb(44, 43, 43)
+
+}
+body {
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {   /*O H1 filho de Header irá ter esses atributos*/
+    font-variant: small-caps;
+    padding-top: 40px;
+    font-size: 4em;    
+
+}
+header > p {    /*O p filho de Header tem esse padding para somar com o do header 40 p/cima 40 p/baixo*/
+    padding-bottom: 40px;
+}
+a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: white;
+}
+a:hover {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+header > p > a > abbr{          /*Tira o dashed do abbr*/
+    text-decoration: underline;
+}
+
+section {       /*TODAS sections tem o 10vh - 1vh = 1% view port, sempre recalculado=responsividade*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*Espaçamento da altura entre linhas*/
+    padding-left: 15px; /*Colocar só o SHORTHAND "padding: " sobrescreve os de cima*/
+    font-size: 3.5vw; /*IMPORTANTE! Ainda não vi @media então vamos adaptar assim*/
+}
+section.comum {
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+}
+section.imagem {
+    background-color: var(--cor_fundo_imagens);
+    color: white;
+}
+section.imagem > p { /*Para não dificultar a leitura caso cores iguais*/
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 325px;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
