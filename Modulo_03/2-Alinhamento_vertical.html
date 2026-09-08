@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+
+            height: 500px;
+            background-color: purple;
+            position: relative;
+            background-image: url(Arquivos/target001.png);
+            background-size: 100% 100%;
+        }
+
+        #conteudo {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            left: 50%;
+            top: 50%;
+            background-image: url(Arquivos/target001.png);
+            background-size: 100% 100%;
+            transform: translate(-50%, -50%);
+        }
+        /*Como centralizar a DIV(semântica nesse caso)
+        Defino a imagem de fundo, size(100% 100%) ocupa a tela toda
+        Agora o elemente que que centralizar:
+        1- Declaro a posição dele absolute
+        2- Regulo as posições: left: 50% top: 50% (Ele ta centralizado, porém só no canto)
+        3- transform: translate(-50%, -50%) Centralizado*/
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
