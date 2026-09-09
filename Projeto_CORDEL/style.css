@@ -1,12 +1,16 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
+
 
 * {                 /*Configurações globais*/
     padding: 0px;
     margin: 0px;
 }
 :root {
-    --cor_fundo_imagens: rgb(44, 43, 43)
-
+    --cor_fundo_imagens: rgb(44, 43, 43);
+    --fonte1: 'Montserrat'
+    --fonte2: 'Sriracha'
 }
 body {
     background-color: white;
@@ -21,7 +25,8 @@ header {
 header > h1 {   /*O H1 filho de Header irá ter esses atributos*/
     font-variant: small-caps;
     padding-top: 40px;
-    font-size: 4em;    
+    font-size: 4em;   
+    font-family: var(--fonte1); 
 
 }
 header > p {    /*O p filho de Header tem esse padding para somar com o do header 40 p/cima 40 p/baixo*/
@@ -45,22 +50,40 @@ section {       /*TODAS sections tem o 10vh - 1vh = 1% view port, sempre recalcu
     padding-bottom: 10vh;
     line-height: 2em; /*Espaçamento da altura entre linhas*/
     padding-left: 15px; /*Colocar só o SHORTHAND "padding: " sobrescreve os de cima*/
-    font-size: 3.5vw; /*IMPORTANTE! Ainda não vi @media então vamos adaptar assim*/
+    font-size: 3.0vw; /*IMPORTANTE! Ainda não vi @media então vamos adaptar assim*/
+    font-family: var(--fonte2)
 }
 section.comum {
     background-color: white;
     color: black;
-    margin-bottom: 20px;
 }
 section.imagem {
     background-color: var(--cor_fundo_imagens);
     color: white;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 section.imagem > p { /*Para não dificultar a leitura caso cores iguais*/
-    background-color: rgba(0, 0, 0, 0.514);
+    background-color: rgba(61, 61, 61, 0.671);
     width: 325px;
+
 }
 
+section#img01 {
+    background-image: url(Arquivos/imagens/background001.jpg);
+    
+}
+
+section#img02 {
+    background-image: url(Arquivos/imagens/background002.jpg);
+
+}
+
+section > p {  /*Espaçamento entre os P juntos*/
+    padding-bottom: 2.5em;
+}
 
 footer {
     background-color: black;
