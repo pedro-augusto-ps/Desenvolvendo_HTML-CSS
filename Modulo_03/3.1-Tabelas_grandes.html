@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        caption {
+            text-align: center;
+            font-size: 1.5em;
+        }
+        table {
+            width: 30%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            padding-left: 10px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            border: 1px solid black;
+            text-align: justify;
+            vertical-align: middle;
+        }
+        th {
+            border: 1px solid gray;
+            padding: 10px;
+            background-color: rgb(46, 46, 46);
+            color: white;
+        }
+        td.dados {
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        tfoot {
+            background-color: rgb(46, 46, 46);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--Anatomia das tabelas
+    theaded
+    tbody
+    tfott-->
+    <table>
+        <caption>Estados x População</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo: </td>
+                <td class="dados">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Rio grande do sul: </td>
+                <td class="dados">11 882 965</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total de habitantes:</td>
+                <td id="total">0000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
