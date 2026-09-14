@@ -6,30 +6,99 @@
     <title>Desafio 4</title>
     <style>
         table {
-            border-collapse: collapse;
             border: 1px solid black;
-            width: 50vw;
-            height: 50vh;
+            border-collapse: collapse;
+            text-align: center;
+            vertical-align: middle;
         }
-        td {
-            border-collapse: collapse;
+        td, th{
             border: 1px solid black;
+            padding: 20px;
         }
-        th {
-            border-collapse: collapse;
-            border: 1px solid black;
+        td.dados {
+            background-color: white;
+            color: black;
+            padding: 1px 10px 1px 10px;
+        }
+
+        .cabecalho {
+            border: 2px solid black ;
+            background-color: rgb(82, 81, 81);
+            color: white;
+
+        }
+        
+        td.media {
+            background-color: gray;
+            text-align: justify;
+            font-weight: bolder;
+            color: white;
+        }
+        .total {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
         }
     </style>
 </head>
 <body>
     <table>
         <tr>
-            <th rowspan="2" scope="col">Área</th>
-            <th rowspan="2" scope="col">Disciplinas</th>
-            <th>Notas</th>
-            <th>Nota1</th>
-            <th>Nota2</th>
-            <th>Média</th>
+            <th rowspan="2" class="cabecalho">Área</th>
+            <th rowspan="2" class="cabecalho">Disciplina</th>
+            <th colspan="2" class="cabecalho">Notas</th>
+            <th rowspan="2" class="cabecalho">Materias</th>
+        </tr>
+        <tr>
+            <td class="cabecalho">Nota 1</td>
+            <td class="cabecalho">Nota 2</td>
+        </tr>
+        <tr>
+            <th rowspan="4">Exatas</td>
+            <td>Matemática</td>
+            <td class="dados">0.0</td>
+            <td class="dados">0.0</td>
+            <td class="dados">0.0</td>
+        </tr>
+        <tr>
+            <td>Física</td>
+            <td class="dados">0.0</td>
+            <td class="dados">0.0</td>
+            <td class="dados">0.0</td>
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td class="dados">0.0</td>
+            <td class="dados">0.0</td>
+            <td class="dados">0.0</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td class="dados">0.0</td>
+            <td class="dados">0.0</td>
+            <td class="dados">0.0</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="media">MÉDIA EXATAS:</td>
+            <td class="total">0.0</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Humanas</td>
+            <td>História</td>
+            <td class="dados">0.0</td>
+            <td class="dados">0.0</td>
+            <td class="dados">0.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td class="dados">0.0</td>
+            <td class="dados">0.0</td>
+            <td class="dados">0.0</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="media">MÉDIA HUMANAS:</td>
+            <td class="total">0.0</td>
         </tr>
     </table>
 </body>
