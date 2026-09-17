@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegando com o IFRAME</title>
+    <style> 
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /* body {
+
+        } */
+        h1 {
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+
+            height: 40px;
+            width: 100%;
+
+            text-align: center;
+        }
+        iframe {
+            height: 400px;
+            width: 98%;
+            background-image: linear-gradient(to right, lightgreen, rgb(27, 104, 27));
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navegando com o IFRAME na própria página!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aperiam quae in libero! Vitae nostrum in quae optio numquam voluptatem ratione consectetur, molestiae, laboriosam alias ducimus dolore fugit amet rem.</p>
+    <p>
+        <ul>
+            <li>ACESSE A <a href="pag01.html" target="main_frame">PÁGINA 1</a></li> <!--ALVO É O IFRAME-->
+            <li>ACESSE A <a href="pag02.html" target="main_frame">PÁGINA 2</a></li> <!-- PRECISA DAR UM NOME PARA O IFRAME ALVO -->
+            <li>ACESSE A <a href="pag03.html" target="main_frame">PÁGINA 3</a></li>
+        </ul>
+    </p>
+    <iframe src="" frameborder="0" name="main_frame"></iframe> <!-- PRECISA DAR UM NOME PARA O IFRAME ALVO -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In perferendis quis labore et repellendus maxime a esse fuga aperiam nisi, deleniti recusandae explicabo nam sapiente quod sequi dolorem rem quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quidem tempore officia voluptatibus, iusto explicabo sint. Et eius temporibus itaque commodi ut excepturi earum reprehenderit magni. Quidem porro at nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reprehenderit magni dolor consectetur nulla tenetur rem corrupti, nostrum aspernatur voluptatibus! Earum sunt similique explicabo maiores cupiditate cumque beatae animi a?[</p>
+</body>
+</html>
