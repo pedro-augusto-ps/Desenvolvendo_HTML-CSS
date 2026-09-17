@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            margin: 2%;
+        }
+        table {
+            width: 30vw;
+            height: 30vh;
+            padding: 10px;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid black;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        .destacar {
+            text-decoration-line: overline;
+        }
+        .coluna_nome {      /*Toda coluna irá ter essa propriedade agora*/
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="coluna_nome"> <!--Toda coluna está selecionada aqui-->
+            <col class="coluna_sex">
+            <col class="coluna_idade">
+            <col class="coluna_profissao">
+        </colgroup>
+        <tr>
+            <caption>Cadastro</caption>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Juliana</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>M</td>
+            <td>21</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Beatriz</td>
+            <td>F</td>
+            <td>27</td>
+            <td>Advogada</td>
+        </tr>
+        <tr>
+            <td>Rafael</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Administrador</td>
+        </tr>
+        <tr>
+            <td>Camila</td>
+            <td>F</td>
+            <td>24</td>
+            <td>Fotógrafa</td>
+        </tr>
+        <tr>
+            <td>Gabriel</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Analista de Sistemas</td>
+        </tr>
+        <tr>
+            <td>Fernanda</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Enfermeira</td>
+        </tr>
+
+    </table>
+</body>
+</html>

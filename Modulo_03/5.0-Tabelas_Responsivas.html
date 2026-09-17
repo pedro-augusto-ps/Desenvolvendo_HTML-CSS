@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em dispositivos pequenos</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        td, th {
+            padding: 8px;
+            border: 1px solid black;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+        div#container_table {
+            overflow-x: auto; /*Para não ter rolagem lateral na tela, e sim na tabela*/
+            }
+
+    </style>
+</head>
+<body>
+    <div id="container_table">
+        <table>
+            <caption>Vendas em mês</caption>
+            <thead>
+                <th>Produto</th>
+                <th>JAN</th>
+                <th>FEV</th>
+                <th>MAR</th>
+                <th>JUN</th>
+                <th>JUl</th>
+                <th>AGO</th>
+                <th>SET</th>
+                <th>OUT</th>
+                <th>NOV</th>
+                <th>DEZ</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tv</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Geladeira</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Colher</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fogão</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>PS4</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
