@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    background-image: url(imagens/fundo.png);
+    background-image: url(imagens/fundo_madeira.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -22,23 +22,31 @@ nav {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 
-    height: 50px;
+    height: 55px;
 }
 
 .container {
     display: flex;
     flex: 1;
-    gap: 40px;
+    gap: 36px;
     justify-content: center;
 }
 
 img.icones {
     background-color: aliceblue;
     border-radius: 50%;
+    border: 1px solid black;
     width: 50px;
     height: 50px;
+
+    box-shadow: 2px 4px 6px 0px black;
 }
 
+img.icones:hover {
+    width: 55px;
+    height: 55px;
+
+}
 thead {
     position: relative;
     height: 100vh;
@@ -55,5 +63,14 @@ section {
     width: 190px;
     height: 370px;
 
-    background: blue url('imagens/celular2.png') no-repeat;
+    background: url(imagens/iphone.jpg) no-repeat;
+    background-size: contain;
+}
+iframe#tela {
+    position: relative;
+    top: 39px;
+    left: 13px;
+
+    width: 158px;
+    height: 290px;
 }
