@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos</title>
+</head>
+<body>
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <p>
+            <label for="iname">NAME: </label>
+            <input type="text" name="name" id="iname" required minlength="8" placeholder="Input your name" autocomplete="name">
+        </p>
+        <p>
+            <label for="ipass">PASSWORD: </label>
+            <input type="password" name="pass" id="ipass">
+        </p>
+        <p>
+            <label for="inumber">ENTER YOU AGE</label>
+            <input type="number" name="number" id="inumber"> <!--Step da para por 0.5-->
+        </p>
+        <input type="submit" value="Submit">    
+        <p>
+            <label for="idata">INPUT THE DATE</label>
+            <input type="date" name="data" id="idata" value="2026-09-23"> <!--Value deixa um valor pré-pronto-->
+        </p>
+        <input type="color" name="color" id="idcolor">  <!--TESTANDO-->
+        <input type="checkbox" name="check" id="icheck">  <!--TESTANDO-->
+        <input type="email" name="email" id="idemail">  <!--TESTANDO-->
+        <input type="hidden" name="esconder">  <!--TESTANDO-->
+        <input type="radio" name="radia" id="idradio">  <!--TESTANDO-->
+        <input type="search" name="search" id="idsearch">  <!--TESTANDO-->
+        <input type="range" name="range" id="idrange">  <!--TESTANDO-->
+    </form>
+</body>
+</html>
