@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste HTML</title>
+</head>
+<body>
+    <form action="cadastro.js">
+        <fieldset>
+            <legend>Sexo</legend>
+            <!--Mesmo nome sempre, pois senão fica errado/contra o propósito do "radio"-->
+            <input type="radio" name="sexo" id="idmasc"><label for="idmasc">Masculino</label><br>
+            <input type="radio" name="sexo" id="idfem"><label for="idfem">Feminino</label><br>
+        </fieldset>
+        <fieldset>
+        <legend>Esportes FAVORITOS</legend>
+        <input type="checkbox" name="fut" id="idfut" checked><label for="idfut">Futebol</label><br>
+        <input type="checkbox" name="basquete" id="idbasquete"><label for="idbasquete">Basquete</label><br>
+        <input type="checkbox" name="volei" id="idvolei"><label for="idvolei">Vôlei</label><br>
+        </fieldset>
+        <p>
+            <input type="reset" value="Resetar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
