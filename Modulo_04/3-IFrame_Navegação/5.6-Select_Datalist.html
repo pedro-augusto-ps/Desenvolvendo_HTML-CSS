@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Select, Datalist, etc</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.js" method="post">
+        <p>
+            <label for="idestado">Insira seu estado: </label>
+            <select name="estado" id="idestado">
+                <option value="rj">Rio de Janeiro</option>
+                <option value="sp">São Paulo</option>
+                <option value="mg">Minas Gerais</option>
+
+                <optgroup label="Região Sul"> <!--Label de atributo-->
+                    <option value="sc">Santa Catarina</option>
+                    <option value="rs">Rio Grande do Sul</option>
+                    <option value="pr">Paraná</option>
+                </optgroup>
+            </select>
+        </p>
+        <hr>
+        <p>
+            <label for="prof">Profissão</label>
+            <input type="text" name="profisao" id="idprofisao" list="lstprofissao"><!--Precisa do list-->
+            <datalist id="lstprofissao"> <!--Uma lista de dados para aparecer ao lado quando o usuário for
+                colocar a profissão dele, serve para ajudar-->
+                <option value="dev">Desenvolvedor</option>
+                <option value="prof">Professor</option>
+                <option value="cabelei">Cabeleireiro</option>
+                <option> Sem value= Aparece assim</option>
+            </datalist>
+        </p>
+        <hr>
+        <p>
+            <!--Usar o método POST, devido a limitação dos KB e sugurança-->
+            <label for="idmsg">Escreva sua mensagem: </label>
+            <textarea name="msg" id="idmsg"></textarea>
+        </p>
+        <hr>
+        <p>
+            <!--Usar o método POST também.-->
+            <label for="idarq">Insira o arquivo: </label>
+            <input type="file" name="arq" id="idarq">
+
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+</body>
+</html>
