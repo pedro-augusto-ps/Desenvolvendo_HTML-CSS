@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <h1>Exemplo de OUTPUT</h1>
+    <form action="cadastro.js" method="get">
+        <p>
+            <label for="idnum1">Insira um número: </label>
+            <input type="number" name="num1" id="idnum1"
+            oninput="idsoma.innerHTML = Number(idnum1.value) + Number(idnum2.value)">
+             
+        </p>
+        <p>
+            <label for="idnum2">Insira outro número: </label>
+            <input type="number" name="num2" id="idnum2"
+            oninput="idsoma.innerHTML = Number(idnum1.value) + Number(idnum2.value)">
+        </p>
+        <p>
+<!--Outputs não são enviados, precisa de ID, o 0 ali é para esse valor começar aparecendo-->
+            <label for="">Soma desses números: </label>
+            <output name="soma" id="idsoma">0</output> 
+        </p>
+    </form>
+</body>
+</html>

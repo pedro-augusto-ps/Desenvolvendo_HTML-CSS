@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <h1>Exemplo de OUTPUT usando ano</h1>
+    <form action="cadastro.js" method="get">
+        <p>
+            <label for="idnasc">Insira o ano de seu nascimento: </label>
+            <input type="number" name="nasc" id="idnasc" value="2000"
+            oninput="out_ididade.innerHTML = Number(2026) - Number(idnasc.value)">
+        </p>
+        <p>
+            <label for="">Sua idade é: </label>
+            <output name="out_idade" id="out_ididade">0</output>
+        </p>
+
+
+
+
+    </form>
+</body>
+</html>
