@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /* CONFIGURAÇÕES DEITADO */
+
+body {
+    background-image: url(cev-landscape.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
