@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/*TABLET*/
+@media screen and (min-widht:768px) and (max-widht:992px) {
+    body {
+        background-image: url(../Arquivos/imagens/back-tablet.jpg);
+    }    
+    img#note {display: none;}
+    img#celular {display: none;}
+    img#impressora {display: none;}
+    img#tablet {display: block;}
+    img#tv {display: none;}
+}
+
+
