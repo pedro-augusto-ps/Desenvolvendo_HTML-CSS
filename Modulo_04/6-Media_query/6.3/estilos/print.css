@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/*Impressão*/
+body {
+    background-image: url(../Arquivos/imagens/back-print.jpg); /*<- Desnecessário*/
+}
+
+main {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-shadow: none;
+}
+
+img#note {display: none;}
+img#celular {display: none;}
+img#impressora {display: block;}
+img#tablet {display: none;}
+img#tv {display: none;}
