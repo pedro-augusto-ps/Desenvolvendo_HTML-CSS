@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* =
+BREAKPOINTS (mobile-first)
+
+Celulares → até 479px
+@media (min-width: 480px)   { }      → celulares grandes/landscape
+@media (min-width: 768px)   { }      → tablets 
+@media (min-width: 1024px)  { }      → tablets / notebooks pequenos
+@media (min-width: 1280px)  { }      → desktops  
+@media (min-width: 1536px)  { }      → telas grandes 
+*/
+
+@media screen and (min-width: 768px) {
+    .material-symbols-outlined {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    header > menu > ul { /*Alinha as caixas de opções pelo "pai"*/
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    } 
+    header > menu > ul >  li { /*Caixas em largulas grandes ficam ao lado*/
+        display: inline-block;
+    }
+    main {
+        width: 768px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    main {
+        width: 96vw; /*Celular ocupa mais o width*/
+    }
+}
