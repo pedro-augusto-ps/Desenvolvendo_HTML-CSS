@@ -9,19 +9,19 @@
 <body>
     <main>
         <section>
-            <div id="login_div">
+            <div id="img_div">
                 <img src="Arquivos/nature.jpg" alt="Imagens para login">
             </div>
-            <h1>Login</h1>
-            <p>dasdasdasdasdasdasdas</p>
-            <form action="cadastro.js" method="post">
-                <div>
-                    <input type="email" name="email" id="idemail">
-                </div>  
-                <div>
-                    <input type="password" name="pass" id="idpass">
-                </div>
-            </form>
+            <div id="login_div">
+                <h1>Login</h1>
+                <p>dasdasdasdasdasdasdas</p>
+                <form action="cadastro.js" method="post" placeholder="on">
+                    <label for="idemail">EMAIL: </label>
+                    <input type="email" name="email" id="idemail" required minlength="10" maxlength="100" placeholder="email@ooo.com">
+                    <label for="idpass">SENHA: </label>
+                    <input type="password" name="pass" id="idpass" required minlength="8" placeholder="Mínimo 8 caractéres!">
+                </form>
+            </div>
         </section>
     </main>
 </body>

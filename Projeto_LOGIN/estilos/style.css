@@ -26,13 +26,28 @@ main > section {
     padding: 10px;
 }
 
-#login_div {
+#img_div {
     margin: 0px;
     height: 200px;
     width: 250px;
     overflow: hidden;
+    padding: 0px;
 }
 
-img {
-    object-fit: cov;
+#login_div {
+    border: 1px solid black;
+    height: 250px
+}
+
+#login_div > h1 {
+    text-align: center;
+    text-transform: uppercase;
+;
+}
+#login_div > p {
+    text-align: center;
+    padding: 10px;
+}
+#login_div > form {
+    background-color: red;
 }
