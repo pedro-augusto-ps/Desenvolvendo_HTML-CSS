@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* =
+BREAKPOINTS (mobile-first)
+
+Celulares → até 479px
+@media (min-width: 480px)   { }      → celulares grandes/landscape
+@media (min-width: 768px)   { }      → tablets 
+@media (min-width: 1024px)  { }      → tablets / notebooks pequenos
+@media (min-width: 1280px)  { }      → desktops  
+@media (min-width: 1536px)  { }      → telas grandes 
+*/
+
+@media screen and (min-width: 530px) and (max-width: 767px) {
+    html, body {
+        font-size: 1.1em;
+    }
+    #section_login {
+        width: 500px;
+    }
+    #section_login > #imagem_login {
+        width: 500px;
+        height: 280px;
+        background-position: center center;
+    }
+}
+
+/*Tablets*/
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    body {
+        background-image: linear-gradient(to top, #A9E5BB, #587c63, #39493e);
+    }
+
+    #section_login {
+        width: 80vw;
+        height: 450px;
+    }
+    
+    #section_login > #imagem_login {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    #section_login > #formulario_login {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: linear-gradient(to top, #A9E5BB, #587c63, #39493e);
+    }
+    
+    #section_login {
+        width: 1000px;
+        height: 450px;
+    }
+    
+    #section_login > #imagem_login {
+        float: left;
+        width: 45%;
+        height: 100%;
+    }
+    #section_login > #formulario_login {
+        float: right;
+        width: 55%;
+    }
+}

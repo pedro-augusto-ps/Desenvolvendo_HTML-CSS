@@ -13,9 +13,9 @@
 }
 
 body, html {
-    background-color: #A9E5BB;
     height: 100vh;
     width: 100vw;
+    background-color: #A9E5BB;
 }
 
 main {
@@ -35,7 +35,10 @@ main {
     background-color: white;
     border-radius: 15px;
     overflow: hidden; /*arredonda as bordas da img*/
-    box-shadow: 3px 7px 7px rgba(0, 0, 0, 0.5)
+    box-shadow: 3px 7px 7px rgba(0, 0, 0, 0.5);
+
+    transition: width 0.3s, height 0.3s; /*Guanabara não explicou isso*/
+    transition-timing-function: ease;
 } 
 
 #section_login > #imagem_login {
