@@ -28,7 +28,6 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 250px;
     height: 500px;
 
@@ -37,9 +36,10 @@ main {
     overflow: hidden; /*arredonda as bordas da img*/
     box-shadow: 3px 7px 7px rgba(0, 0, 0, 0.5);
 
+    font-size: 0.9em;
+    transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s; /*Guanabara não explicou isso*/
     transition-timing-function: ease;
-    font-size: 0.9em;
 } 
 
 #section_login > #imagem_login {
@@ -58,16 +58,16 @@ main {
     text-align: center;
 }
 
-#ection_login > #formulario_login > h1 {
-    text-transform: uppercase;
+#section_login > #formulario_login > h1 {
     padding-top: 3px;
-    
+    text-transform: uppercase;
 }
 
 #section_login > #formulario_login > p {
     margin-top: 0px;
 }
 
+/*DIV / INPUTS */
 form > .campos_login {
     background-color: #314236;    
     width: 100%;
@@ -80,6 +80,27 @@ form > .campos_login > label {
     display: none;
 }
 
+span {
+    float: left;
+    font-size: 2.0em;
+    color: white;
+    width: 40px;
+    height: 100%;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.campos_login > input {
+    float: left;
+    width: calc(100% - 40px); /*Largura da div= 100, icone ocupa 40px*/
+    height: 100%;
+    border-radius: 6px;
+    border: 1px solid #314236;
+}
+
+input:focus-within {
+    background-color: #f4fff7;
+}
 
 form > input[type="submit"] {
     display: block;
@@ -91,9 +112,9 @@ form > input[type="submit"] {
     color: black;
     border: 1px solid #6b9176;
     border-radius: 5px;
-    text-transform: uppercase;
     cursor: pointer;
     margin-top: 5px;
+    text-transform: uppercase;
 }
 
 form > input[type="submit"]:hover {
@@ -114,9 +135,9 @@ form > .butao {
     color: #314236;
     border: 1px solid #6b9176;
     border-radius: 5px;
-    text-transform: uppercase;
     cursor: pointer;
     margin-top: 5px;
+    text-transform: uppercase;
 }
 form > .butao:hover {
     background-color: #A9E5BB;
@@ -124,4 +145,8 @@ form > .butao:hover {
 form > .butao > i {
     font-size: 1.5em;
 }
+
+
+
+
 

@@ -54,7 +54,7 @@ Celulares → até 479px
     }
 
     #section_login {
-        width: 1000px;
+        width: 100vw;
         height: 450px;
         font-size: 1.5em;
     }
@@ -72,5 +72,9 @@ Celulares → até 479px
     #section_login > #formulario_login {
         float: left;
         width: 55%;
+    }
+
+    form > .butao > i {
+    font-size: 1.1em;
     }
 }
