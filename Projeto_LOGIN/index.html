@@ -6,6 +6,8 @@
     <title>Projeto LOGIN</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media_query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--API
+    Do Google para os ícones-->
 </head>
 <body>
     <main>
@@ -18,6 +20,18 @@
                 <p>Boas-vindas!</p>
                 <p>Insira seu <strong>email</strong> e <strong>senha</strong> para continuar!</p>
                 <form action="cadastro.js" method="post" autocomplete="on">
+                    <div class="campos_login">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="email" id="idemail" placeholder="Seu email: " autocomplete="email" required maxlength="50">
+                        <label for="idemail">Email</label>
+                    </div>
+                    <div class="campos_login">
+                        <span class="material-icons">key</span>
+                        <input type="password" name="pass" id="idpass" placeholder="Sua senha: " required minlength="8" maxlength="25">
+                        <label for="idpass">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci_a_senha">Esqueci a senha <i class= "material-icons">mail</i></a>
 
                 </form>
             </div>
