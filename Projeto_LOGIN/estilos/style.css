@@ -54,13 +54,74 @@ main {
 #section_login > #formulario_login {
     display: block;
     padding: 10px;
+    padding-top: 0px;
     text-align: center;
 }
 
 #ection_login > #formulario_login > h1 {
     text-transform: uppercase;
+    padding-top: 3px;
+    
 }
 
 #section_login > #formulario_login > p {
-    margin-top: 10px;
+    margin-top: 0px;
 }
+
+form > .campos_login {
+    background-color: #314236;    
+    width: 100%;
+    display: block;
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 10px;
+}
+form > .campos_login > label {
+    display: none;
+}
+
+
+form > input[type="submit"] {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    height: 30px;
+    background-color: #A9E5BB;
+    color: black;
+    border: 1px solid #6b9176;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+form > input[type="submit"]:hover {
+    background-color: #80ad8d;
+    width: 100%;
+    height: 35px;
+    transition: width 0.2s, height 0.2s;
+    transition-timing-function: ease;
+}
+
+form > .butao {
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    color: #314236;
+    border: 1px solid #6b9176;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 5px;
+}
+form > .butao:hover {
+    background-color: #A9E5BB;
+}
+form > .butao > i {
+    font-size: 1.5em;
+}
+
