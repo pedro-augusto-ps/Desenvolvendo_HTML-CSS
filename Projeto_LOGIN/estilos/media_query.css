@@ -51,19 +51,20 @@ Celulares → até 479px
     body {
         background-image: linear-gradient(to top, #A9E5BB, #587c63, #39493e);
     }
-    
+
     #section_login {
         width: 1000px;
         height: 450px;
     }
     
     #section_login > #imagem_login {
-        float: left;
+        float: right;
         width: 45%;
         height: 100%;
+        background-position: center center;
     }
     #section_login > #formulario_login {
-        float: right;
+        float: left;
         width: 55%;
     }
 }
