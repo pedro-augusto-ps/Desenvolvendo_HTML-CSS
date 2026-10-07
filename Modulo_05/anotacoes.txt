@@ -1,0 +1,2 @@
+Display flex vai apenas no container, não nos ITENS. Os itens 
+iram receber configurações de itens. 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: lightcoral;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .item {
+            text-align: center;
+            background-color: green;
+            border: 1px solid black;
+            padding: 10px;
+            flex: auto;/*Impede espaços em branco*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            EXEMPLO DE BLOCO A
+        </div>
+        <div class="item">
+            EXEMPLO DE BLOCO B
+        </div>
+        <div class="item">
+            EXEMPLO DE BLOCO C
+        </div>
+        <div class="item">
+            EXEMPLO DE BLOCO D
+        </div>
+        <div class="item">
+            EXEMPLO DE BLOCO  E
+        </div>
+        <div class="item">
+            EXEMPLO DE BLOCO F
+        </div>
+    </div>
+</body>
+</html>
