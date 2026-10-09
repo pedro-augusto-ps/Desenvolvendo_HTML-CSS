@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizando com flex-contentent</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: red;
+            flex-flow: row wrap;
+            justify-content: space-evenly; /*O primeiro item fica grudado no main start*/
+            /*Flex-end o último item vai ser grudado no main end*/
+            /*Center = Centro do container, todos itens juntos*/
+            /*Space-between = Primeiro item no main start, último no main end, outros no meio*/
+            /*space-evenly = Entre todos os itens, espaçamento igual*/
+            /*Anotações no OBSIDIAN*/
+            height: 500px;  /*Para poder visualizar os aling-itens*/
+            align-items: center;
+        }
+        .item {
+            background-color: rgb(90, 90, 90);
+            color: white;
+            padding: 10px;
+ 
+        } 
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item">Item7</div>
+        <div class="item">Item8</div>
+        <div class="item">Item9</div>
+        <div class="item">Item10</div>
+    </main>
+</body>
+</html>

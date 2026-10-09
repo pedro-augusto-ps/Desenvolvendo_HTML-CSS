@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        body {
+            background-color: lightcoral;
+        }
+        header {
+            display: flex;
+            height: 40px;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row nowrap;
+
+            background-color: orange;
+        }
+        header > nav {
+            margin: 10px;
+            background-color: red;
+        }
+        aside {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
+            height: calc(100vh - 40px);
+        }
+        aside > section {
+            background-color: greenyellow;
+        }
+        main {
+            background-color: blue;
+        }
+        main > section {
+            width: 90%;
+            height: 90%;
+            background-color: aqua;
+            width: 100vw
+            height: calc(100vh - 40px);
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <p>Menu de navegacao</p>
+        </nav>
+    </header>  
+
+    <div class="container">
+        <aside >
+            Imagem vertical
+        </aside>
+        <main class="container">
+            <section class="item">
+                conteudo de baixo
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        creditos
+    </footer>
+</body>
+</html>
