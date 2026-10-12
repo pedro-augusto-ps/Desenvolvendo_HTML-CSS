@@ -19,6 +19,8 @@ header, section.normal {
 }
 section.flex_content {
     background-color: rgb(158, 158, 158);
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 p, h1, h2 {
@@ -26,3 +28,37 @@ p, h1, h2 {
     margin-bottom: 10px;
     
 }
+
+
+section > article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+section > article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+article > div.text {
+    flex: 1 1 500px;
+}
+
+article > div.media {
+    flex: 1 1 500px;
+}
+
+div.media > img {
+    display: block;
+    margin: auto;  /*Centraliza a img*/
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;  /*Centraliza a img*/
+}
+
+/*O background cinza é um container
+Que tem 2 filhos, esses filhos também são flexbox*/
