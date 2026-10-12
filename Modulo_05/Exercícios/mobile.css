@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+header > nav {
+    flex-flow: column nowrap;
+
+}
+
+header {
+    flex-flow: column;
+}
+
+header > h1 {
+    flex-basis: 50px;
+}
+header > nav > a {
+    flex-basis: auto;
+    margin: 2px;
+    width: 90vw; /* Faz os botões se preencher para os lados */
+}
