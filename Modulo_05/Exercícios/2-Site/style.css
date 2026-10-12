@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+header, section.normal {
+    padding: 10px;
+
+}
+section.flex_content {
+    background-color: rgb(158, 158, 158);
+}
+
+p, h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
