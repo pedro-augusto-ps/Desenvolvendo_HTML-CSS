@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid blue;
+            display: grid;
+            gap: 5px;
+            place-items: normal normal;
+            place-content: normal normal;
+            grid-template: repeat(3, 50px) / repeat(2, auto);
+            grid-auto-rows: 100px;
+
+        }
+        .item {
+            border: 1px solid red;
+            padding: 5px;
+        }
+
+        caixa2 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        
+    </div>
+</body>
+</html>
