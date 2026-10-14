@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+         * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+         }
+        
+        .layout {
+            display: grid;
+            grid-template: repeat(4, auto) / repeat(3, auto);
+            padding: 10px;
+
+
+        }
+
+        .cabeça {
+            background-color: red;
+            padding: 10px;
+            grid-area: 1 / 2 / 1 / -1;
+        }
+        .principal {
+            background-color: blue;
+            padding: 100px;
+        }
+        .lado {
+            background-color: yellow;
+            padding: 10px;
+        }
+        .pe {
+            background-color: green;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <header class="cabeça">
+
+        </header>
+        <main class="principal">
+
+        </main>
+        <aside class="lado">
+
+        </aside>
+        <footer class="pe">
+
+        </footer>
+    </div>
+</body>
+</html>
